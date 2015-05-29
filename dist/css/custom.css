@@ -21,7 +21,7 @@ h1 {
 .container-loaded {
     opacity: 1;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover {
 
   background-color: #cd4c59;
   border-color: #c93d4b;
