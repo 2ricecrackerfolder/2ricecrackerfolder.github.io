@@ -29,13 +29,34 @@
       }
 
       </style>
+      <style>
+      .container {
+      opacity: 0;
+      transition: opacity 1s;
+      }
+      #fixed {
+      opacity: 1;
+      transition: opacity 1s;
+      }
+      .navbar-wrapper {
+          opacity: 1;
+          transition: opacity 1s;
+      }
+      .business-header {
+          opacity: 1;
+          transition: opacity 1s;
+      }
+      .container-loaded {
+          opacity: 1;
+      }
+      </style>
     </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
     <div class="navbar-wrapper">
         <nav class="navbar navbar-inverse navbar-fixed-top" style="margin">
-          <div class="container">
+          <div class="container" id = "fixed">
             <div class="navbar-header">
               <a class="navbar-brand" href="home.html"style="color: rgb(218,122,132)">Rowland Heights Community Christian Church</a>
             </div>
@@ -284,7 +305,28 @@
     <script src="dist/js/vendor/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="dist/assets/js/ie10-viewport-bug-workaround.js"></script>
- 
-</div>
+   <script>
+        $(document).ready(function() {
+      // Let's simulate some loading time.
+      
+      setTimeout(function() {
+          $('.container').addClass('container-loaded');
+        });
+      });
+        
+      </script>
+
+    <script>
+        $(document).ready(function() {
+      // Let's simulate some loading time.
+      
+      setTimeout(function() {
+          $('.business-header').addClass('container-loaded');
+        });
+      });
+        
+      </script>
+
+
 </body>
 </html>

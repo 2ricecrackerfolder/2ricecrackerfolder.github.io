@@ -22,25 +22,31 @@
         font-family: Roboto Slab;
       }
 
-      body {
-        -webkit-animation-delay: 0.1s;
-        -webkit-animation-name: fontfix;
-        -webkit-animation-duration: 0.1s;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: linear;
-    }
-
-    @-webkit-keyframes fontfix {
-        from { opacity: 1; }
-        to   { opacity: 1; }
-    }
       </style>  
-
+      <style>
+      .container {
+      opacity: 0;
+      transition: opacity 1s;
+      }
+      .navbar-wrapper {
+          opacity: 1;
+          transition: opacity 1s;
+      }
+      .business-header {
+          opacity: 1;
+          transition: opacity 1s;
+      }
+      .container-loaded {
+          opacity: 1;
+      }
+      </style>
  	</head>
 <!-- NAVBAR
 ================================================== -->
 
   <body>
+
+
 
     <div class="navbar-wrapper">
         <nav class="navbar navbar-inverse navbar-fixed-top" style="margin">
@@ -213,6 +219,7 @@
 
     </div><!-- /.container -->
 
+  
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -223,6 +230,5 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   
 
-</div>
 </body>
 </html>

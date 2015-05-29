@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
 
-	<head>
-	    <meta name="description" content="">
-	    <meta name="author" content="">
-      <title>About Us</title>
-	    <!-- Bootstrap core CSS -->
-	    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-	    <!-- Custom styles for this template -->
-	    <link href="carousel.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+      <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="carousel.css" rel="stylesheet">
 
       <!-- Custom CSS -->
       <link href="dist/css/business-frontpage.css" rel="stylesheet">
 
 
       <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-      <style> 
+<style> 
      
       div {
         font-family: Roboto Slab;
@@ -27,14 +24,9 @@
       }
 
       </style>
-      <style>
+    <style>
       .container {
-        opacity: 0;
-        transition: opacity 1.5s;
-      }
-
-      #fixed {
-      opacity: 1;
+      opacity: 0;
       transition: opacity 1s;
       }
       .navbar-wrapper {
@@ -43,21 +35,18 @@
       }
       .business-header {
           opacity: 1;
-          transition: opacity 1.5s;
+          transition: opacity 1s;
       }
       .container-loaded {
           opacity: 1;
       }
       </style>
- 	</head>
-<!-- NAVBAR
-================================================== -->
-
+  </head>
   <body>
 
     <div class="navbar-wrapper">
         <nav class="navbar navbar-inverse navbar-fixed-top" style="margin">
-          <div class="container" id = "fixed">
+          <div class="container">
             <div class="navbar-header">
               <a class="navbar-brand" href="home.html"style="color: rgb(218,122,132)">Rowland Heights Community Christian Church</a>
             </div>
@@ -89,21 +78,16 @@
         </nav>
     </div>
 
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
     <header class="business-header" style = "background: url(img/outside_pano.jpg) center center no-repeat scroll;">
       <h1 class="tagline" style="color: rgb(218,122,132)">Schedule</h1></div>
     </header>
 
-
     <br>
-    <br> 
+    <br>
+
     <div class="container">
-      <!-- <h1> Schedule </h1> -->
-        <table class="table table-hover">
+
+      <table class="table table-hover">
           <thead>
             <tr>
               <th><h4>Day</h4></th>
@@ -158,19 +142,15 @@
           </tbody>
         </table>
 
+
         <hr class="featurette-divider">
 
         <h1 style="color: rgb(218,122,132)">Calendar</h1>
         <br>
-        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=158litmk65a9a6rdsn1tggsfio%40group.calendar.google.com&amp;color=%235A6986&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1050" height="600" frameborder="0" scrolling="no"></iframe>
 
-                  
-                   
-                  
+<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=158litmk65a9a6rdsn1tggsfio%40group.calendar.google.com&amp;color=%235A6986&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="1050" height="600" frameborder="0" scrolling="no"></iframe>
 
-
-
-        <footer>
+      <footer>
           <hr class="featurette-divider">
           <p class="pull-left"><a href="#" style="color: rgb(218,122,132)">Chinese Site</a></p>
           <p class="pull-right"><a href="#" style="color: rgb(218,122,132)">Back to top</a></p>
@@ -180,32 +160,27 @@
 
 
 
-    
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="dist/js/vendor/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="dist/js/ie10-viewport-bug-workaround.js"></script>
-
     <script>
-        $(document).ready(function() {
-      // Let's simulate some loading time.
-      
-      setTimeout(function() {
-          $('.container').addClass('container-loaded');
+      $(document).ready(function() {
+    // Let's simulate some loading time.
+    
+        setTimeout(function() {
+            $('.container').addClass('container-loaded');
         });
-      });
-        
-      </script>
+    });
+    </script>
 
-      
-        
-      </script>
+
   </body>
+
+
 </html>
