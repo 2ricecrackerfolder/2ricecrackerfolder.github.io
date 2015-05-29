@@ -1,0 +1,34 @@
+div {
+  font-family: Roboto Slab;
+}
+
+h1 {
+  font-family: Roboto Slab;
+}
+
+.container {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.navbar-wrapper {
+    opacity: 1;
+    transition: opacity 1s;
+}
+.business-header {
+    opacity: 1;
+    transition: opacity 1s;
+}
+.container-loaded {
+    opacity: 1;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+
+  background-color: #cd4c59;
+  border-color: #c93d4b;
+}
+
+.btn
+{
+  background-color: #D66b76;
+  border-color: #c93d4b;
+}
