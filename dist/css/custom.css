@@ -6,21 +6,7 @@ h1 {
   font-family: Roboto Slab;
 }
 
-.container {
-  opacity: 1;
-  transition: opacity 1s;
-}
-.navbar-wrapper {
-    opacity: 1;
-    transition: opacity 1s;
-}
-.business-header {
-    opacity: 1;
-    transition: opacity 1s;
-}
-.container-loaded {
-    opacity: 1;
-}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover {
 
   background-color: #cd4c59;
