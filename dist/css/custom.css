@@ -1,8 +1,4 @@
-div {
-  font-family: Roboto Slab;
-}
-
-h1 {
+div, h1 {
   font-family: Roboto Slab;
 }
 
@@ -17,4 +13,8 @@ h1 {
 {
   background-color: #d66b76;
   border-color: #c93d4b;
+}
+
+#test{
+  color: #DA7A84;
 }
