@@ -1,7 +1,19 @@
+body {
+	padding-top: 50px;
+}
+
 div, h1 {
   font-family: Raleway;
 }
 
+.featurette {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.title {
+	color: rgb(218,122,132);
+}
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover {
 
