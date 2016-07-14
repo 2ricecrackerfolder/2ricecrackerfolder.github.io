@@ -6,6 +6,10 @@ div, h1 {
   font-family: Raleway;
 }
 
+li {
+  list-style-type: none;
+}
+
 .featurette {
 	padding-top: 50px;
 	text-align: center;
@@ -14,6 +18,43 @@ div, h1 {
 .title {
 	color: rgb(218,122,132);
 }
+
+.bigDivider {
+  margin-bottom: 40px;
+  display: block;
+  height: 1px;
+  border-top: 1px solid #ccc;
+
+}
+
+.smallDivider {
+  border-top: 1px solid #ccc;
+  width: 30%;
+}
+
+
+#gen {
+
+}
+
+#gen #RHCCCMap {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#gen ul {
+  padding-left: 0;
+}
+
+#gen li {
+  margin-bottom: 20px;
+}
+
+#gen #genInfo {
+  margin-top: 40px;
+}
+
+
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover {
 
