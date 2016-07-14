@@ -9,7 +9,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-       <title>Fellowships</title>
+       <title>ContactUs</title>
         <!-- Bootstrap core CSS -->
         <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,7 +23,6 @@
 
         <!-- Custom CSS -->
       <link href="dist/css/business-frontpage.css" rel="stylesheet">
-      
     </head>
 <!-- NAVBAR
 ================================================== -->
@@ -71,7 +70,6 @@
     </header>
 
 
- 
 
     <div class="container">
 
@@ -84,22 +82,84 @@
                     </h2>
                     <hr>
                 </div>
-                <div class="col-md-8">
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- form CONTATING --> 
+    <!-- <form action="submitthis()">
+      Name: <input type="text" name="name"><br><br>
+      Email: <input type="text" name="email"><br><br>
+      Message: <textarea rows="4" cols="50" name="message"> </textarea><br>
+      <input type="submit" value="Submit">
+    </form> -->
+    <br> </br>
+    <script type="text/javascript">
+        function submitme() {
+        window.open('mailto:' + document.getElementById("InputEmail").value + '?subject=ContactFrom'+ document.getElementById("InputName").value + '&body=' + document.getElementById("InputMessage").value);
+      }
+      </script>
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+    <!--small><i></i>Add alerts if form ok... success, else error.</i></small-->
+  <!-- <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. </strong></div>   
+    <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs.</strong></div> -->
+  </div>
+  <form role="form" onSubmit="return submitme();" method="post">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="InputName">Your Name</label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required="required">
+          <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-ok form-control-feedback"></i> --></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputEmail">Your Email</label>
+        <div class="input-group">
+          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="required"  >
+          <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-ok form-control-feedback"></i> --></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputMessage">Message</label>
+        <div class="input-group"
+>
+          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required="required"></textarea>
+          <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-ok form-control-feedback"></i> --></span></div>
+      </div>
+      <!-- <div class="form-group">
+        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="InputReal" id="InputReal" required="required">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div> -->
+      <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+    </div>
+  </form>
+
+
+
+
+  <hr class="featurette-divider hidden-lg">
+  <div class="col-lg-5 col-md-push-1">
+    <address>
+    <h3>Church Location</h3>
+    <p class="lead"><a target="_blank"href="https://www.google.com/maps/place/Rowland+Heights+Community+Christian+Church/@33.9875509,-117.8816764,15z/data=!4m5!3m4!1s0x0:0xc3839ae2e60280b9!8m2!3d33.9875509!4d-117.8816764">
+19309 Colima Rd.<br>Rowland Heights, CA 91748</a><br>
+      Phone: (626)965-3033<br>
+      Fax: (626)965-3456</p>
+    </address>
+  </div>
+
+  <div class="col-md-8">
+    <br><br><br>
                     <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.202501975677!2d-117.88169500000001!3d33.987331999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32afc3a7f7301%3A0xf080ebc9ad37130!2s19309+Colima+Rd%2C+Rowland+Heights%2C+CA+91748!5e0!3m2!1sen!2sus!4v1432883493958" width="740" height="450" frameborder="0" style="border:0"></iframe>
                 </div>
                 <div class="col-md-4">
-                    <p>Address:
-                        <strong>19309 Colima Rd.
-                            <br>Rowland Heights, CA 91748</strong>
-                    </p>
-                    <p>Phone:
-                        <strong>(626)965-3033</strong>
-                    </p>
-                    <p>Fax:
-                        <strong>(626)965-3456</a></strong>
-                    </p>
-                    
+                    <br><br><br>
                     <p>Church Staff Extension:
                         <strong>
                             <br/>Molly Moh 101
@@ -115,15 +175,16 @@
                         </strong>
                     </p>
                 </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+</div>
 
-        
+</div>
+
+<!-- ContactDone -->
 
 
-    </div>
-    
+ <div class="clearfix"></div>    
+
+
 
    <hr class="featurette-divider">
      <footer style="margin-top: 0px; margin-bottom: 0px;">
